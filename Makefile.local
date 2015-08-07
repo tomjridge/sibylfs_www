@@ -1,4 +1,7 @@
+WWWDIR:=/tmp/l/github/super/sibylfs_www
 upload:
-	cp -R _book ~/l/nyx_www_home/home_page/fs
-	-cp book.pdf ~/l/nyx_www_home/home_page/fs/
-	chmod -R ugo+rx ~/l/nyx_www_home/home_page/fs
+	cp -R _book/* $(WWWDIR)
+	cd $(WWWDIR) && git status && git add * && git commit -m "+" -a && git push
+
+#	-cp book.pdf ~/l/nyx_www_home/home_page/fs/
+#	chmod -R ugo+rx ~/l/nyx_www_home/home_page/fs
