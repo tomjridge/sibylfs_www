@@ -1,0 +1,4 @@
+upload:
+	cp -R _book ~/l/nyx_www_home/home_page/fs
+	-cp book.pdf ~/l/nyx_www_home/home_page/fs/
+	chmod -R ugo+rx ~/l/nyx_www_home/home_page/fs
